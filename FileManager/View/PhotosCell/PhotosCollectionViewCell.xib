@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCollectionViewCell" id="gTV-IL-0wX" customClass="PhotosCollectionViewCell" customModule="FileManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-Ff-dip">
+                        <rect key="frame" x="0.0" y="0.0" width="239" height="256"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-LH-xky">
+                                <rect key="frame" x="2" y="2" width="235" height="252"/>
+                                <color key="tintColor" name="bacground"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="bacground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P3x-LH-xky" secondAttribute="trailing" constant="2" id="1hk-fg-suF"/>
+                            <constraint firstItem="P3x-LH-xky" firstAttribute="leading" secondItem="N1B-Ff-dip" secondAttribute="leading" constant="2" id="ORq-Ms-jjj"/>
+                            <constraint firstAttribute="bottom" secondItem="P3x-LH-xky" secondAttribute="bottom" constant="2" id="csA-nF-MBY"/>
+                            <constraint firstItem="P3x-LH-xky" firstAttribute="top" secondItem="N1B-Ff-dip" secondAttribute="top" constant="2" id="wq6-MY-utG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="N1B-Ff-dip" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8lw-Ie-UWs"/>
+                <constraint firstAttribute="trailing" secondItem="N1B-Ff-dip" secondAttribute="trailing" id="9x4-yg-cjl"/>
+                <constraint firstAttribute="bottom" secondItem="N1B-Ff-dip" secondAttribute="bottom" id="AAd-sM-Rxa"/>
+                <constraint firstItem="N1B-Ff-dip" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HcY-5E-ymV"/>
+            </constraints>
+            <size key="customSize" width="239" height="256"/>
+            <connections>
+                <outlet property="bacView" destination="N1B-Ff-dip" id="IE4-OU-4ip"/>
+                <outlet property="imageView" destination="P3x-LH-xky" id="Io7-Ou-sNm"/>
+            </connections>
+            <point key="canvasLocation" x="274.63768115942031" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bacground">
+            <color red="0.94499999284744263" green="0.96100002527236938" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
